@@ -1,0 +1,6 @@
+@WildLeague.API_HostAddress = http://localhost:5260
+
+GET {{WildLeague.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

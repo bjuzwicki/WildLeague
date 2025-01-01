@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WildLeague.API", "WildLeague.API\WildLeague.API.csproj", "{F7830F7F-0D99-4E15-A300-EBB962F19420}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WildLeague.Application", "WildLeague.Application\WildLeague.Application.csproj", "{3AE7716D-8DD7-4D7D-B330-A76C64B2864B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WildLeague.Domain", "WildLeague.Domain\WildLeague.Domain.csproj", "{B6F5C0F8-8FA9-4592-B2A4-8AD97C4057CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WildLeague.Infrastructure", "WildLeague.Infrastructure\WildLeague.Infrastructure.csproj", "{4FDF95CE-26AF-440E-8822-41962390BA7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7830F7F-0D99-4E15-A300-EBB962F19420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7830F7F-0D99-4E15-A300-EBB962F19420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7830F7F-0D99-4E15-A300-EBB962F19420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7830F7F-0D99-4E15-A300-EBB962F19420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE7716D-8DD7-4D7D-B330-A76C64B2864B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE7716D-8DD7-4D7D-B330-A76C64B2864B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE7716D-8DD7-4D7D-B330-A76C64B2864B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE7716D-8DD7-4D7D-B330-A76C64B2864B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F5C0F8-8FA9-4592-B2A4-8AD97C4057CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F5C0F8-8FA9-4592-B2A4-8AD97C4057CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F5C0F8-8FA9-4592-B2A4-8AD97C4057CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F5C0F8-8FA9-4592-B2A4-8AD97C4057CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FDF95CE-26AF-440E-8822-41962390BA7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDF95CE-26AF-440E-8822-41962390BA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDF95CE-26AF-440E-8822-41962390BA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDF95CE-26AF-440E-8822-41962390BA7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DA21337-0EE4-429E-A4BD-174814A0601A}
+	EndGlobalSection
+EndGlobal
