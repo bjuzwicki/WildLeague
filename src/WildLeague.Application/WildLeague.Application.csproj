@@ -11,12 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Leagues\" />
-    <Folder Include="Features\Matches\" />
-    <Folder Include="Features\Simulations\" />
-    <Folder Include="Features\Schedules\" />
-    <Folder Include="Features\Teams\" />
-    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\Repositories\" />
   </ItemGroup>
 
 </Project>

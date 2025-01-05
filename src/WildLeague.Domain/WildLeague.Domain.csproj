@@ -7,13 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WildLeague.Application\WildLeague.Application.csproj" />
+    <Folder Include="Aggregates\" />
+    <Folder Include="Events\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Persistence\DbContexts\" />
-    <Folder Include="Persistence\Configurations\" />
-    <Folder Include="Persistence\Repositories\" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
   </ItemGroup>
 
 </Project>
