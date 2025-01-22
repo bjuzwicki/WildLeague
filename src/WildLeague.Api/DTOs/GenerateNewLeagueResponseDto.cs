@@ -1,6 +1,6 @@
 ﻿namespace WildLeague.API.DTOs
 {
-	public class CreateNewLeagueResponseDto
+	public class GenerateNewLeagueResponseDto
 	{
 		public string? LeagueAsString { get; set; } 
 	}

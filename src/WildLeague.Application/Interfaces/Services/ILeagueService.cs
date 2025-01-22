@@ -5,7 +5,7 @@ namespace WildLeague.Application.Interfaces.Services
 {
     public interface ILeagueService
     {
-        League Create(LeagueName leagueName, int numberOfTeams);
-        League Create(LeagueName leagueName, List<Team> teams);
+		League Generate(LeagueName leagueName, int numberOfTeams);
+        League Generate(LeagueName leagueName, List<Team> teams);
     }
 }

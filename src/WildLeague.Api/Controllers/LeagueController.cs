@@ -10,25 +10,25 @@ namespace WildLeague.API.Controllers
 	public class LeagueController : BaseController<LeagueController>
 	{
 		private readonly ILeagueService _leagueService;
-		private readonly IMapper _mapper;
+		//private readonly IMapper _mapper;
 
 		public LeagueController(
 			IMediator mediator, 
-			IMapper mapper,
+			//IMapper mapper,
 			ILeagueService leagueService) : base(mediator)
 		{
 			_leagueService = leagueService;
-			_mapper = mapper;
+		//	_mapper = mapper;
 		}
 
 		[HttpPost]
-		[Route("createNewLeague")]
-		public async Task<ActionResult<CreateNewLeagueResponseDto>> CreateNewLeague([FromBody]CreateNewLeagueRequestDto dto)
+		[Route("generateNewLeague")]
+		public async Task<ActionResult<GenerateNewLeagueResponseDto>> GenerateNewLeague([FromBody]GenerateNewLeagueRequestDto dto)
 		{
-			var leagueName = new LeagueName(dto.Name.Value);
-			var league = _leagueService.Create(leagueName, dto.NumberOfTeams);
+			var leagueName = new LeagueName(dto.LeagueName);
+			var league = _leagueService.Generate(leagueName, dto.NumberOfTeams);
 
-			var response = new CreateNewLeagueResponseDto()
+			var response = new GenerateNewLeagueResponseDto()
 			{
 				LeagueAsString = league.ToString()
 			};

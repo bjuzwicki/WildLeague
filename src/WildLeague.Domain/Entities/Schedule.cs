@@ -7,7 +7,9 @@ namespace WildLeague.Domain.Entities
 	{
 		public List<Round> Rounds { get; }
 
-		public IReadOnlyCollection<Match> Matches => Rounds.SelectMany(x => x.MatchList).ToList();
+		public IReadOnlyCollection<Match> Matches => Rounds.OrderBy(x => x.Number.Value).SelectMany(x => x.MatchList).ToList();
+
+		public string AsString => ToString() ?? "";
 
 		public Schedule(List<Round> rounds)
 		{

@@ -1,8 +1,8 @@
 ﻿namespace WildLeague.API.DTOs
 {
-	public class CreateNewLeagueRequestDto
+	public class GenerateNewLeagueRequestDto
 	{
-		public required LeagueNameDto Name { get;set; }
+		public required string LeagueName { get;set; }
 		public required int NumberOfTeams { get;set; }
 	}
 }

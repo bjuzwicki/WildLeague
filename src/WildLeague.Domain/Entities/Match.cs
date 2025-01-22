@@ -6,7 +6,7 @@ namespace WildLeague.Domain.Entities
 	{
 		public Team HomeTeam { get; }
 		public Team AwayTeam { get; }
-		public DateTime MatchDate { get; private set; }
+		public DateTime Date { get; private set; }
 
 		public Match(Team homeTeam, Team awayTeam) 
 		{
@@ -14,21 +14,21 @@ namespace WildLeague.Domain.Entities
 			AwayTeam = awayTeam;
 		}
 
-		public Match(Team homeTeam, Team awayTeam, DateTime matchDate)
+		public Match(Team homeTeam, Team awayTeam, DateTime date)
 		{
 			HomeTeam = homeTeam;
 			AwayTeam = awayTeam;
-			MatchDate = matchDate;
+			Date = date;
 		}
 
-		public void SetMatchDate(DateTime matchDate) 
+		public void SetMatchDate(DateTime date) 
 		{
-			MatchDate = matchDate;
+			Date = date;
 		}
 
 		public override string ToString()
 		{
-			return HomeTeam.Name.Value + " (" + MatchDate.ToString() + ") " + AwayTeam.Name.Value;
+			return HomeTeam.Name.Value + " (" + Date.ToString() + ") " + AwayTeam.Name.Value;
 		}
 	}
 }
